@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+       <meta charset="utf-8">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>Play Car Data</title>
+    </head>
+    <body>
+
+        <h2>Drivers behavior data App</h2>
+        <p>User registration</P> 
+        <div id="loger">
+            <p>Username:</p>
+            <input type="text" id="userText">
+            <p>Email:</p>
+            <input type="text" id="emailText">
+            <p>Plate Num:</p>
+            <input type="text" id="plateText">
+            <input type="button" id="butEnter" value="enter">
+        </div>
+        <br></br>
+        
+        <p>Search for username</P>    
+        <div id="searcher">
+            <input type="text" id="search_text">
+            <input type="button" id="but_search" value="search">
+        </div>
+            
+            
+            <p>Data results:</p>
+            <div id="search_block"></div>
+            <input type="button" id="add_points" value="+3 points" style="color:blue;">
+            <input type="button" id="less_points" value="-3 points" style="color:red;">
+            <input type="button" id="delete_user" value="delete">
+            
+            <br></br>
+            <p>All database records:</p>
+            <div id="all_results"></div>
+            <input type="button" id="but_update" value="update">
+        
+        <script type="text/javascript" src="cordova.js" charset="utf-8"></script>
+        <script type="text/javascript" src="js/app.js" charset"utf-8"></script>
+        
+    </body>
+</html>
